@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "demo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "addr",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "value",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DeployContract.DemoResult",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/26_DeleteContract/DeployContract.sol": "DeployContract"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/26_DeleteContract/DeleteContract.sol": {
+			"keccak256": "0xf7f1f5d1bbe2a894f61937a96f7577aec53be4b430c068ba6d38c7cbbe515736",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bfddc03c26fc5999897c93102be47e36c0fb52f5a051738d5a220e87d1d84934",
+				"dweb:/ipfs/QmcY6GSCods135AEPmxEdjrnLn9rkJbgi2DFzP55jmKLzU"
+			]
+		},
+		"contracts/26_DeleteContract/DeployContract.sol": {
+			"keccak256": "0xaf80ec27be0ac48a9741a821000fe3e599875c35a3196f457f6bef1de06153d4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4969c13049256f2caab93df45de03cf694b74f6907fd7d42da7a16e96146a374",
+				"dweb:/ipfs/QmUWZXwww29dkW85jiGfdrLAi7m7trybLCVGStyK8XwBZB"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,185 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"name": "SelectorEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "callWithSignature",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "param1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "param2",
+						"type": "bool"
+					}
+				],
+				"name": "elementaryParamSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "selectorWithElementaryParam",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "param1",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "fixedSizeParamSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "selectorWithFixedSizeParam",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mintSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "mSelector",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "param1",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "string",
+						"name": "param2",
+						"type": "string"
+					}
+				],
+				"name": "nonFixedSizeParamSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "selectorWithNonFixedSizeParam",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonParamSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "selectorWithNonParam",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/29_Selector.sol": "Selector"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/29_Selector.sol": {
+			"keccak256": "0xe88599d4d38fd0cd6a2befe4ce08317cd769ed1a9265adfc6136e00b3a388051",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6146f6e7dba0ae23b8fecfef8098cae744d5db08d7635c0c803b141daaf94ba7",
+				"dweb:/ipfs/Qmc8EFEdZSHKvyUXiUiSgEQTSM2CAjuxwEH4ctY2gTvW8g"
+			]
+		}
+	},
+	"version": 1
+}

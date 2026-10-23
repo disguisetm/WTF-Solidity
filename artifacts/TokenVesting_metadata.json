@@ -1,0 +1,205 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "beneficiaryAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "durationSeconds",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "ERC20Released",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "beneficiary",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "duration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "erc20Released",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "release",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "start",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "vestedAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "这个合约会将ERC20代币线性释放给给受益人`_beneficiary`。 释放的代币可以是一种，也可以是多种。释放周期由起始时间`_start`和时长`_duration`定义。 所有转到这个合约上的代币都会遵循同样的线性释放周期，并且需要受益人调用`release()`函数提取。 合约是从OpenZeppelin的VestingWallet简化而来。",
+			"kind": "dev",
+			"methods": {
+				"release(address)": {
+					"details": "受益人提取已释放的代币。 调用vestedAmount()函数计算可提取的代币数量，然后transfer给受益人。 释放 {ERC20Released} 事件."
+				},
+				"vestedAmount(address,uint256)": {
+					"details": "根据线性释放公式，计算已经释放的数量。开发者可以通过修改这个函数，自定义释放方式。",
+					"params": {
+						"timestamp": ": 查询的时间戳",
+						"token": ": 代币地址"
+					}
+				}
+			},
+			"title": "ERC20代币线性释放",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/43_TokenVesting.sol": "TokenVesting"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/31_ERC20/ERC20.sol": {
+			"keccak256": "0xafa873cf000e72f16ed17d35af34f33f8886be8d94ca66c1e00db2839e2163c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1e62abe090a2d8bc028f9c8d418891f8d40fc9a464eee40c709a1a10b66a9f3c",
+				"dweb:/ipfs/QmSd1cPXXyk3k27j6S52wiunKZdKnoGw2HVJahvjLeG1Nr"
+			]
+		},
+		"contracts/31_ERC20/IERC20.sol": {
+			"keccak256": "0x41c89e5cf203f6ab6734b058a581378b9c99c9466a36cda381afa05163f14e17",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1c3fe678a0494b615375f59bd05637c837db6707034d6f086278125974ff5c2f",
+				"dweb:/ipfs/QmU1h9hwrdMqxuYzr8sUyQKn5zoVtUQiZnyXCoyeiDoX65"
+			]
+		},
+		"contracts/43_TokenVesting.sol": {
+			"keccak256": "0x7aa8ee085e3710be4ade2503c442dfb9b516637f8258a4381ca5c27082151f52",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5ef3d3d50aa289abfac859d86c1a3ce91d065db0199ec557791893b8d1f09ca5",
+				"dweb:/ipfs/QmTh4BNvuYzM5MKDHx82hXnVsC2Sri4XwSTv3kMmexuB5R"
+			]
+		}
+	},
+	"version": 1
+}

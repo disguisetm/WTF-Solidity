@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "bar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/13/DiamondInheritance.sol": "Adam"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/13/DiamondInheritance.sol": {
+			"keccak256": "0x2a471a2c0929cf989043849310c41b0e8a797dac0776b43e0bace0ac41eb776f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://08b2d9d1043e5237c2cac5fe46c7fc3d890d1cd5a11c69309e7cc632f87d4a2d",
+				"dweb:/ipfs/QmNyr7gdJ5nJ6xd9ZenvDVraNevyogAnh3jUWLUtin1jNJ"
+			]
+		}
+	},
+	"version": 1
+}

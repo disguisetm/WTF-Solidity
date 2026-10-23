@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdrawFromFailList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multiTransferToken(address,address[],uint256[])": {
+					"params": {
+						"_addresses": "空投地址数组",
+						"_amounts": "代币数量数组（每个地址的空投数量）",
+						"_token": "转账的ERC20代币地址"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multiTransferToken(address,address[],uint256[])": {
+					"notice": "向多个地址转账ERC20代币，使用前需要先授权"
+				}
+			},
+			"notice": "向多个地址转账ERC20代币",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/33_Airdrop/Airdrop.sol": "Airdrop"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/33_Airdrop/Airdrop.sol": {
+			"keccak256": "0x78b4e1051974403382110a519d9399d23ccc9fc1a89e60555705166b8150e225",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://35d759ac0d08386f4cfc7bfda5dcb5eee63fc7a6fccb8f3f90945f484aa4fbc8",
+				"dweb:/ipfs/QmeYZy3vunuF1z5qFxc2n8dHxmhNj3uTT8APgMCZJDSFDi"
+			]
+		},
+		"contracts/33_Airdrop/IERC20.sol": {
+			"keccak256": "0x41c89e5cf203f6ab6734b058a581378b9c99c9466a36cda381afa05163f14e17",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1c3fe678a0494b615375f59bd05637c837db6707034d6f086278125974ff5c2f",
+				"dweb:/ipfs/QmU1h9hwrdMqxuYzr8sUyQKn5zoVtUQiZnyXCoyeiDoX65"
+			]
+		}
+	},
+	"version": 1
+}
